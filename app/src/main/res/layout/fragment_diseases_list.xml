@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fragment_disease_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:gravity="start"
+            android:text="@string/message_choose_tags"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/diseases_recyclerview"
+            android:padding="10dp"
+            android:layout_below="@id/fragment_disease_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/diseases_recyclerview">
+
+            <Button
+                android:id="@+id/dismiss_dialog_button1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:textColor="@color/colorAccent"
+                android:text="@string/message_dismiss"/>
+
+
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:textColor="@color/colorAccent"
+                android:text="@string/message_ok"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_load_diseases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

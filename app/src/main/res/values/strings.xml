@@ -1,0 +1,264 @@
+<resources>
+    <!-- App essentials -->
+    <string name="app_name">Journey to Self</string>
+    <string name="motto">The journey starts today</string>
+
+    <!-- Exceptions messages -->
+    <string name="error_unknown_cause">Cauza nestiuta</string>
+
+    <!-- String related to News Feed Menu -->
+    <string name="action_refresh">Actualizeaza</string>
+
+    <!-- MainActivity's texts -->
+    <string name="start_button">Incepe calatoria</string>
+    <string name="title_activity_login">Conecteaza-te</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Nume utilizator</string>
+    <string name="prompt_password">Parola</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Logheaza-te</string>
+    <string name="action_register">Nu ai un cont inca? Inregistreaza-te aici</string>
+    <string name="error_invalid_username">Nume utilizator invalid</string>
+    <string name="error_invalid_password">Parola este prea scurta</string>
+    <string name="error_incorrect_password">Parola incorecta</string>
+    <string name="error_field_required">Acest camp este mandatoriu</string>
+    <string name="error_incorrect_credentials">Nume de utilizator sau parola gresite</string>
+    <string name="option_remember_credentials">Tine-ma minte</string>
+    <string name="title_activity_news_feed">Articole</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="label_articole">Articole</string>
+
+    <!-- Related to ViewArticleActivity -->
+    <string name="error_invalid_article_id">Id-ul articolului este invalid</string>
+    <string name="error_unavailable_content">Continutul nu este disponibil</string>
+    <string name="default_title">Articol</string>
+
+    <!-- Related to ChooseKindActivity -->
+    <string name="therapist">Terapeut</string>
+    <string name="patient">Pacient</string>
+
+    <!-- Elements descriptions -->
+    <string name="description_application_logo">Application logo</string>
+
+    <!-- Related to RegisterActivity -->
+    <string name="hint_username">Nume utilizator</string>
+    <string name="hint_nume">Nume si prenume</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Parola (minim 6 caractere)</string>
+    <string name="hint_confirm_password">Confirma parola</string>
+    <string name="hint_adresa_cabinet">Adresa cabinet (optional)</string>
+    <string name="hint_descriere">Scurta descriere activitatii de terapeut (optional)</string>
+    <string name="title_therapist">Inregistreaza-te ca terapist</string>
+    <string name="title_patient">Inregistreaza-te ca pacient</string>
+    <string name="hint_choose_illnesses">Bifeaza tulburarile psihice</string>
+    <string name="hint_choose_specializations">Bifeaza specializarile</string>
+    <string name="error_mismached_passwords">Parolele nu coincid</string>
+    <string name="error_email_in_use">Adresa este deja folosita</string>
+    <string name="error_username_in_use">Numele de utilizator este deja folosit</string>
+    <string name="error_invalid_name">Nume invalid</string>
+    <string name="error_unchecked_illnesses">Bifati cel putin o casuta</string>
+    <string name="message_registration_complete">Inregistrare completa</string>
+    <string name="message_registration_failed">Inregistrarea nu s-a putut efectua</string>
+    <string name="hint_country">Tara</string>
+    <string name="hint_city">Oras</string>
+    <string name="error_unselected_country">Tara neselectata</string>
+    <string name="error_unselected_city">Oras neselectat</string>
+    <string-array name="array_countries">
+        <item>-</item>
+        <item>Romania</item>
+        <item>Germania</item>
+        <item>Italia</item>
+        <item>Franta</item>
+        <item>Anglia</item>
+        <item>alta</item>
+    </string-array>
+
+    <string-array name="array_cities">
+        <item>-</item>
+        <item>Bucuresti</item>
+        <item>Iasi</item>
+        <item>altul</item>
+    </string-array>
+
+    <!-- Related to ProfileActivity -->
+    <string name="text_to_newsfeed">Noutati</string>
+    <string name="text_progress">Progres</string>
+    <string name="text_to_therapists">Terapeuti</string>
+    <string name="text_overall_score">Scor</string>
+    <string name="text_today_progress">Zi completata</string>
+    <string name="text_username">Nume utilizator</string>
+    <string name="text_statut">Statut</string>
+    <string name="label_specializations">Specializari</string>
+    <string name="label_illnesses">Dezordini</string>
+    <string name="title_progress_activity">Progres</string>
+    <string name="menuitem_questions">Intrebari</string>
+    <string name="menuitem_diary">Jurnal</string>
+    <string name="menuitem_statistics">Statistici</string>
+    <string name="action_settings">Setari</string>
+    <string name="action_logout">Delogare</string>
+    <string name="title_activity_diary">Jurnal</string>
+    <string name="title_diary_activity">Jurnal</string>
+    <string name="hint_title_post">Titlu</string>
+    <string name="hint_write_note">Scrie aici</string>
+    <string name="action_save_menuitem">Salvare</string>
+    <string name="action_edit_menuitem">Editare</string>
+    <string name="action_discard_menuitem">Anulare</string>
+    <string name="text_to_patients">Pacienti</string>
+    <string name="text_rating">Nota</string>
+    <string name="text_current_patients">Pacienti</string>
+    <string name="title_diary_post">Post</string>
+    <string name="message_post_saved">Post salvat</string>
+    <string name="message_post_unsaved">Postul nu a fost salvat</string>
+    <string name="message_unfinished_task">Postul se salveaza..</string>
+    <string name="action_add_photo_menuitem">Adauga fotografie</string>
+    <string name="start_application">Start</string>
+    <string name="hint_answer">Raspuns</string>
+    <string name="hint_score">Pct.</string>
+    <string name="no_questions_message">Nicio intrebare</string>
+    <string name="add_answer_message">Adauga raspuns</string>
+    <string name="action_saving_quiz">Salvez intrebarile</string>
+    <string name="message_exponation_saving_quiz">Asteapta un moment</string>
+    <string name="message_quiz_is_saving">In curs de salvare...</string>
+    <string name="message_saved">Salvat</string>
+    <string name="title_quiz_activity">Chestionar</string>
+    <string name="error_cannot_save_unfilled_question">Intrebarile necompletate nu vor fi salvate</string>
+    <string name="error_connot_create_new_question">Intrebarea curenta trebuie sa fie completata</string>
+    <string name="message_saving_progress">Salvez progresul</string>
+    <string name="title_result">Rezultat</string>
+    <string name="message_back">Inapoi</string>
+    <string name="title_retrieve_quiz_result">Obtin rezultatul</string>
+    <string name="label_address">Adresa cabinet</string>
+    <string name="label_description">Descriere</string>
+    <string name="message_choose">Alege</string>
+    <string name="message_cancel">Incheie</string>
+    <string name="status_prefix">Status cerere:</string>
+    <string name="message_sending_request">Trimit cererea</string>
+    <string name="error_connot_send_request">Cererea nu a putut fi trimisa</string>
+    <string name="notification_request_received_from">Cerere de terapie primita de la: </string>
+    <string name="notification_request_cancelled_by">Terapie anulata de: </string>
+    <string name="notification_request_update">cerere </string>
+    <string name="label_emitted_date">Emisa:</string>
+    <string name="title_cancelling_request">Anulez cererea</string>
+    <string name="message_view_profile">Vizualizeaza profilul</string>
+    <string name="message_accept">Accepta</string>
+    <string name="message_decline">Refuza</string>
+    <string name="suffix_expired">expirat</string>
+    <string name="message_empty_list">Lista goala</string>
+    <string name="message_notifications">Notificari</string>
+    <string name="message_delete_all_notifications">Sterge tot</string>
+    <string name="x_axis_label_dates">Scoruri</string>
+    <string name="message_processing_answers">Procesez raspunsurile</string>
+    <string name="message_quiz_forwarder">Nu stiu ce sa bifez</string>
+    <string name="instructions_forward_to_quiz">Vei fi redirectionat catre un chetionar. Dupa ce il vei completa, iti va fi estimata situatia. Continui?</string>
+    <string name="message_positive">Da</string>
+    <string name="message_negative">Nu</string>
+    <string name="option_request_credentials">Cere parola inainte de autentificare</string>
+    <string name="error_credentials_unsaved">Datele nu au putut fi salvate</string>
+
+    <!-- Authentication fragment -->
+    <string name="title_authentication">Autentifica-te</string>
+    <string name="or_label">sau</string>
+    <string name="hint_use_fingerprint">Foloseste amprenta</string>
+    <string name="message_dismiss">Anulare</string>
+    <string name="message_ok">ok</string>
+    <string name="message_login">Logare</string>
+    <string name="error_unusasble_fingerprint">Autentificare prin amprenta indiponibila</string>
+    <string name="error_fingerprint_refused">Autentificarea prin amprenta esuata</string>
+    <string name="message_try_again">Incearca din nou</string>
+    <string name="message_choose_tags">Alege tag-urile postului</string>
+
+    <!-- Related to EditPostActivity -->
+
+
+    <!-- Related to ProgressActivity -->
+
+
+</resources>

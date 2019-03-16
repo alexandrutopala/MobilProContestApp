@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="@dimen/elevation_standard"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <include
+                android:id="@+id/patient_profile_layout"
+                layout="@layout/item_therapist_profile"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/grey"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/emitted_date_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="visible"/>
+
+            <ProgressBar
+                android:id="@+id/progress_load_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                />
+
+
+            <Button
+                android:id="@+id/view_profile_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_shape_oval"
+                android:text="@string/message_view_profile"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-light"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="viewProfileEvent"
+                />
+
+            <Button
+                android:id="@+id/cancel_button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_shape_oval"
+                android:text="@string/message_cancel"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-light"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="cancelTherapyEvent"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:id="@+id/accept_decline_buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/decline_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/button_shape_oval"
+                    android:text="@string/message_decline"
+                    android:backgroundTint="@android:color/holo_red_light"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-light"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="declinePatientEvent"
+                    />
+
+                <Button
+                    android:id="@+id/accept_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/button_shape_oval"
+                    android:text="@string/message_accept"
+                    android:backgroundTint="@android:color/holo_green_dark"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-light"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="acceptPatientEvent"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

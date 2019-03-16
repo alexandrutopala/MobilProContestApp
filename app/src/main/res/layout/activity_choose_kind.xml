@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:columnCount="2"
+    android:rowCount="1"
+    tools:context=".ChooseKindActivity"
+    >
+
+
+    <Button
+        android:id="@+id/button_therapist"
+        android:layout_width="wrap_content"
+        android:padding="15dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-5dp"
+        android:background="@drawable/shape_semi_oval"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_above="@id/button_patient"
+        android:text="@string/therapist"
+        android:onClick="registerTherapist"/>
+
+    <Button
+        android:id="@+id/button_patient"
+        android:layout_width="wrap_content"
+        android:padding="15dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/shape_semi_oval"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignStart="@id/button_therapist"
+        android:gravity="center"
+        android:text="@string/patient"
+        android:onClick="registerPatient"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/ic_main_app"
+        android:contentDescription="@string/description_application_logo" />
+
+</RelativeLayout>

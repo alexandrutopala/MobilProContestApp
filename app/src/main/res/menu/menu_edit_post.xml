@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_save_post"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/action_save_menuitem"
+        android:visible="false"
+
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_edit_post"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/action_edit_menuitem"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_discard_post"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="@string/action_discard_menuitem"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_add_photo"
+        android:icon="@drawable/outline_add_white_24"
+        android:title="@string/action_add_photo_menuitem"
+        android:visible="false"
+
+        app:showAsAction="ifRoom" />
+
+
+</menu>
